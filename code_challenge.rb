@@ -63,6 +63,4 @@ data_input[:events].each do |event|
        
 end
 
-puts
 puts result
-puts
