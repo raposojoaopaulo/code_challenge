@@ -37,9 +37,6 @@ result = { "sessionsByUser": {} }
 
 data_input[:events].sort_by! {|event| event[:timestamp]}
 
-puts data_input
-puts "----"
-
 data_input[:events].each do |event|
    if result[:sessionsByUser][event[:visitorId]] == nil
         result[:sessionsByUser][event[:visitorId]] = []
@@ -66,6 +63,4 @@ data_input[:events].each do |event|
        
 end
 
-puts
 puts result
-puts
