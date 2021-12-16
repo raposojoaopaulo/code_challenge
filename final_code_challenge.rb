@@ -44,6 +44,6 @@ output = {
 }
 puts JSON.generate(result, output)
 
-File.write('sessionByUsers.json', JSON.dump(JSON.generate(result, output)))
+File.write('sessionByUsers.json', JSON.generate(result, output))
 
 puts
